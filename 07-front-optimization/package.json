@@ -13,6 +13,7 @@
     "axios": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
     "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
     "react-syntax-highlighter": "^15.6.1",
@@ -22,8 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "serve": "npm run build && node ./node_modules/serve/bin/serve.js -s build",
+    "server": "node ./node_modules/json-server/lib/cli/bin.js --watch ./server/database.json -c ./server/config.json"
   },
   "eslintConfig": {
     "extends": [
